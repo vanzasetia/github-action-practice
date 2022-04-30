@@ -3,6 +3,7 @@ name: close-stale-bot
 on:
   schedule:
     - cron: "0 10 * * *"
+  workflow_dispatch:
 
 jobs:
   stale:
