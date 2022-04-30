@@ -17,4 +17,4 @@ jobs:
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           days-before-stale: 0
-          days-before-delete: 0
+          days-before-delete: 1
