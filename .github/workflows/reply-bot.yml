@@ -1,3 +1,5 @@
+name: reply-bot
+
 on:
   issues:
     types: [opened]

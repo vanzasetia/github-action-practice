@@ -1,3 +1,5 @@
+name: pull-request-bot
+
 on:
   schedule:
     - cron: "0 * * * *"
