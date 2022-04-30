@@ -11,7 +11,7 @@ jobs:
   titlePrefixCheck:
     runs-on: ubuntu-latest
     steps:
-      - if: startsWith(github.event.issue.title, '[BOT]') == 'true'
+      - if: startsWith(github.event.issue.title, 'ABC-') != 'true'
         uses: peter-evans/close-issue@v2
         with:
           comment: |
