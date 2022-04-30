@@ -1,0 +1,14 @@
+name: close-issue-bot
+
+on:
+  issues:
+    types: [opened]
+jobs:
+  titlePrefixCheck:
+    runs-on: ubuntu-latest
+    steps:
+      - if: startsWith(github.event.issue.title, '[BOT]') == 'true'
+        uses: peter-evans/close-issue@v2
+        with:
+          comment: |
+            Thank you Bot! I'll close it.
