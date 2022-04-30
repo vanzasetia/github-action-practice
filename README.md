@@ -1,3 +1,3 @@
 # GitHub Action Practice
 
-Learn to create github actions.
+Learn to create github actions in public.
