@@ -3,6 +3,8 @@ name: close-pull-request-bot
 on:
   pull_request_target:
     types: [opened]
+  pull_request:
+    types: [opened]
   workflow_dispatch:
 
 jobs:
