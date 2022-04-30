@@ -1,0 +1,16 @@
+name: reply-bot-first-time-contributor
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+  pull_request_review_comment:
+    types: [created]
+
+steps:
+  - uses: actions/first-interaction@v1
+    with:
+      repo-token: ${{ secrets.GITHUB_TOKEN }}
+      issue-message: '# Hi There!\nThank you for creating your first issue!'
+      pr-message: "Thank you for taking time to create your first pull request!"
