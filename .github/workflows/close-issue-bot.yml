@@ -1,8 +1,6 @@
 name: close-issue-bot
 
 on:
-  schedule:
-    - cron: "0 * * * *"
   issues:
     types: [opened]
   workflow_dispatch:
@@ -15,4 +13,4 @@ jobs:
         uses: peter-evans/close-issue@v2
         with:
           comment: |
-            Thank you Bot! I'll close it.
+            Thank you! I'll close it.
