@@ -1,3 +1,3 @@
-# Commit Bot
+# Bot
 
-Learn to create a commit bot.
+Learn to create github actions.
