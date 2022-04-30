@@ -13,7 +13,7 @@ jobs:
       - uses: ManojCSE17/open-issue@latest
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          title: [BOT] Create an issue
+          title: "[BOT]: Create an issue"
           body: Automatic generated every hour.
           assignees: |
             vanzasetia
