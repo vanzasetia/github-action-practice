@@ -1,0 +1,20 @@
+name: close-stale-bot
+
+on:
+  schedule:
+    - cron: "0 10 * * *"
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v4
+        with:
+          stale-issue-message: "It is stale"
+          stale-pr-message: "It is stale"
+          close-issue-message: "This issue was closed"
+          close-pr-message: "This PR was closed because"
+          days-before-issue-stale: 1
+          days-before-pr-stale: 1
+          days-before-issue-close: 1
+          days-before-pr-close: 1
