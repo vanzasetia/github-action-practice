@@ -3,6 +3,8 @@ name: close-issue-bot
 on:
   issues:
     types: [opened]
+  workflow_dispatch:
+
 jobs:
   titlePrefixCheck:
     runs-on: ubuntu-latest
