@@ -15,4 +15,5 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: "<h1>Hello there!</h1>"
-          footer: "Hello, I am Vanza! Nice to meet you!"
+          pr-message: "<h1>Thank you for contributing!</h1>"
+          footer: ""
