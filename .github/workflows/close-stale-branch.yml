@@ -1,20 +1,20 @@
-name: close-branch-bot
+# name: close-branch-bot
 
-on:
-  schedule:
-    - cron: "1 * * * *"
-  workflow_dispatch:
+# on:
+#   schedule:
+#     - cron: "1 * * * *"
+#   workflow_dispatch:
 
-permissions:
-  issues: write
-  contents: write
+# permissions:
+#   issues: write
+#   contents: write
 
-jobs:
-  stale_branches:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: crs-k/stale-branches@v2.0.1
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          days-before-stale: 1
-          days-before-delete: 2
+# jobs:
+#   stale_branches:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: crs-k/stale-branches@v2.0.1
+#         with:
+#           repo-token: "${{ secrets.GITHUB_TOKEN }}"
+#           days-before-stale: 1
+#           days-before-delete: 2

@@ -1,19 +1,19 @@
-name: issue-bot
+# name: issue-bot
 
-on:
-  schedule:
-    - cron: "0 * * * *"
-  workflow_dispatch:
+# on:
+#   schedule:
+#     - cron: "0 * * * *"
+#   workflow_dispatch:
 
-jobs:
-  auto-create-issue:
-    runs-on: ubuntu-latest
+# jobs:
+#   auto-create-issue:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: ManojCSE17/open-issue@latest
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          title: "[BOT]: Create an issue"
-          body: Automatic generated every hour.
-          assignees: |
-            vanzasetia
+#     steps:
+#       - uses: ManojCSE17/open-issue@latest
+#         with:
+#           token: ${{ secrets.GITHUB_TOKEN }}
+#           title: "[BOT]: Create an issue"
+#           body: Automatic generated every hour.
+#           assignees: |
+#             vanzasetia

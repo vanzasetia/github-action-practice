@@ -1,16 +1,16 @@
-name: close-pull-request-bot
+# name: close-pull-request-bot
 
-on:
-  pull_request_target:
-    types: [opened]
-  pull_request:
-    types: [opened]
-  workflow_dispatch:
+# on:
+#   pull_request_target:
+#     types: [opened]
+#   pull_request:
+#     types: [opened]
+#   workflow_dispatch:
 
-jobs:
-  run:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: superbrothers/close-pull-request@v3
-        with:
-          comment: "Currently, I do not accept PRs. 🙂"
+# jobs:
+#   run:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: superbrothers/close-pull-request@v3
+#         with:
+#           comment: "Currently, I do not accept PRs. 🙂"
